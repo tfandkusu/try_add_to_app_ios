@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  TryAddToApp
-//
-//  Created by toya on 2022/07/18.
-//
-
 import UIKit
 import Flutter
 

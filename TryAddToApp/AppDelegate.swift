@@ -1,19 +1,14 @@
-//
-//  AppDelegate.swift
-//  TryAddToApp
-//
-//  Created by toya on 2022/07/18.
-//
-
 import UIKit
+import Flutter
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    lazy var flutterEngine = FlutterEngine(name: "my flutter engine")
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        flutterEngine.run()
         return true
     }
 

@@ -15,8 +15,12 @@ class ViewController: UIViewController {
         )
         methodChannel.setMethodCallHandler({ (call: FlutterMethodCall, result: @escaping FlutterResult) -> Void in
             if(call.method == "callNativePage") {
-                let secondViewController = SecondViewController()
-                flutterViewController.present(secondViewController, animated: true)
+                let secondViewController = self.storyboard?.instantiateViewController(
+                    withIdentifier: "SecondViewController"
+                )
+                if(secondViewController != nil) {
+                    flutterViewController.present(secondViewController!, animated: true, completion: nil)
+                }
                 result(1);
             }else if(call.method == "back") {
                 flutterViewController.dismiss(animated: true)

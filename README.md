@@ -2,7 +2,7 @@
 
 iOS app using flutter module.
 
-# 【WIP】How to build
+# How to setup
 
 ```sh
 git clone git@github.com:tfandkusu/try_add_to_app_ios.git

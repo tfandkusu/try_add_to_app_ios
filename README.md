@@ -2,6 +2,10 @@
 
 iOS app using flutter module.
 
+## iOS native page → Flutter page → iOS native page
+
+![add_to_app](https://user-images.githubusercontent.com/16898831/179553450-6e73af09-c95e-4c99-b8ba-054b82d9b36c.gif)
+
 # How to setup
 
 ```sh

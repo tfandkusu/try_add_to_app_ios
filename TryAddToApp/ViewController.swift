@@ -1,18 +1,15 @@
-//
-//  ViewController.swift
-//  TryAddToApp
-//
-//  Created by toya on 2022/07/18.
-//
-
 import UIKit
+import Flutter
 
 class ViewController: UIViewController {
-    
-    @IBOutlet var myLabel: UILabel!
-    
+        
     @IBAction func buttonTapped(sender: UIButton) {
-        myLabel.text = "Hello World!"
+        let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
+        let flutterViewController = FlutterViewController(
+            engine: flutterEngine, nibName: nil, bundle: nil
+        )
+        // flutterViewController.modalPresentationStyle = .fullScreen
+        present(flutterViewController, animated: true, completion: nil)
     }
 
     override func viewDidLoad() {
